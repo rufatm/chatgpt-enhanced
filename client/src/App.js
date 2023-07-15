@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "normalize.css"
+import logo from "./logo.svg"
+import "./App.css"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <aside className="chatgpt-sidebar">
+        <div className="new-chat-button">
+          <span>+</span>
+          NEW CHAT
+        </div>
+      </aside>
+      <section className="chatgpt-main">
+        <div className="chat-input-wrapper">
+          <textarea
+            className="chat-input-textarea"
+            placeholder="Send a Message"
+          ></textarea>
+        </div>
+      </section>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
